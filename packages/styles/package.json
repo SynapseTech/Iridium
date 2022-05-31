@@ -1,0 +1,19 @@
+{
+  "name": "@iridium-design/styles",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Liz Ainslie <lizainslie16@gmail.com>",
+  "homepage": "https://github.com/SynapseTech/Iridium#readme",
+  "license": "MIT",
+  "main": "lib/styles.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SynapseTech/Iridium.git"
+  },
+  "scripts": {
+    "build": ""
+  },
+  "bugs": {
+    "url": "https://github.com/SynapseTech/Iridium/issues"
+  }
+}
