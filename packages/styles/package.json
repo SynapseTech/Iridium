@@ -15,5 +15,8 @@
   },
   "bugs": {
     "url": "https://github.com/SynapseTech/Iridium/issues"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
   }
 }
