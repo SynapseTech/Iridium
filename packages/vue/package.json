@@ -40,6 +40,7 @@
     "vue-tsc": "^0.38.5"
   },
   "dependencies": {
-    "vue": "^3.2.37"
+    "vue": "^3.2.37",
+    "@iridium-design/styles": "link:../styles"
   }
 }
