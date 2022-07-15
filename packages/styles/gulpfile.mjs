@@ -7,7 +7,7 @@ import rename from 'gulp-rename';
 const sassPlugin = gulpSass(dartSass);
 
 export function sass() {
-  return gulp.src('./src/index.scss')
+  return gulp.src('./src/index.sass')
     .pipe(sourcemaps.init())
     .pipe(sassPlugin({outputStyle: 'compressed'}).on('error', sassPlugin.logError))
     .pipe(sourcemaps.write())
