@@ -18,7 +18,8 @@
     "url": "git+https://github.com/SynapseTech/Iridium.git"
   },
   "scripts": {
-    "build": "gulp sass"
+    "build": "gulp sass",
+    "dev": "gulp watchSass"
   },
   "bugs": {
     "url": "https://github.com/SynapseTech/Iridium/issues"

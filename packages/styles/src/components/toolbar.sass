@@ -4,13 +4,19 @@
 .toolbar
   display: flex
   align-items: stretch
+  border-bottom: 1px solid $border
 
   &.sidebarLeft
     .brand
       width: $sidebarWidth
 
   .brand
+    letter-spacing: 0.025em
     flex-grow: 0
+    padding: 8px
+    display: flex
+    align-items: center
+    font-weight: 700
 
   .items
     display: flex

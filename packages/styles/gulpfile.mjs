@@ -15,9 +15,17 @@ export function sass() {
     .pipe(gulp.dest('./dist'));
 }
 
-function defaultTask(cb) {
-  gulp.parallel(sass);
+export function watchSass(cb) {
+  gulp.watch('./src/**/*.sass', sass);
   cb();
 }
 
-export default defaultTask;
+export function watch(cb) {
+  gulp.parallel(watchSass);
+  cb();
+}
+
+export default function defaultTask(cb) {
+  gulp.parallel(sass);
+  cb();
+};

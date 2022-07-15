@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import '@iridium-design/styles/src/components/toolbar';
 
 export interface ToolbarProps {
   sidebarLeft?: boolean;

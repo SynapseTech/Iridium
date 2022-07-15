@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import '@iridium-design/styles/src/components/toolbar';
-import {computed} from "vue";
+import { computed } from 'vue';
 
 export interface ToolbarItemProps {
   active?: boolean;
@@ -17,6 +16,7 @@ const dynamicClasses = computed(() => ({
 
 <template lang="pug">
 .item(:class="dynamicClasses")
+  .activeIndicator
   slot
 </template>
 
