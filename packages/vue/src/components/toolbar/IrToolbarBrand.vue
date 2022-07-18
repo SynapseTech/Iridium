@@ -1,7 +1,17 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import type { Component } from 'vue';
+
+export interface ToolbarBrandProps {
+  tag?: string | Component;
+}
+
+const props = withDefaults(defineProps<ToolbarBrandProps>(), {
+  tag: 'div',
+});
+</script>
 
 <template lang="pug">
-.brand
+component.brand(:is="props.tag")
   slot
 </template>
 

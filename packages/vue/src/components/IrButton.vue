@@ -1,5 +1,6 @@
 <script setup lang="ts">
-import { Component } from 'vue';
+import type { Component } from 'vue';
+import { computed } from 'vue';
 
 interface ButtonProps {
   tag?: string | Component;
@@ -9,10 +10,16 @@ interface ButtonProps {
 const props = withDefaults(defineProps<ButtonProps>(), {
   tag: 'button',
 });
+
+const dynamicClasses = computed(() => ({
+  ...(props.color ? {
+    [props.color]: true,
+  } : {}),
+}))
 </script>
 
 <template lang="pug">
-component.button(:is="props.tag")
+component.button(:is="props.tag" :class="dynamicClasses")
   slot
 </template>
 
