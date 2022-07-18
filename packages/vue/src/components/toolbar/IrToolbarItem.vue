@@ -11,7 +11,7 @@ const props = withDefaults(defineProps<ToolbarItemProps>(), {
 
 const dynamicClasses = computed(() => ({
   active: props.active,
-}))
+}));
 </script>
 
 <template lang="pug">

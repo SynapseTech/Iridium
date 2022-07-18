@@ -2,13 +2,13 @@
 
 .button
   appearance: none
-  display: inline-block
-  padding: .4rem .6rem
+  display: inline-flex
+  padding: .5rem 1rem
   margin: 0
   align-self: start
 
   border: none
-  border-radius: .25rem
+  border-radius: .5rem
 
   background-color: $secondary
   color: inherit
@@ -22,11 +22,11 @@
   cursor: pointer
   transition: background-color 250ms ease
 
-  &.big
-    padding: .6rem .9rem
-
   &.block
     width: 100%
+    display: flex
+    text-align: center
+    justify-content: center
 
   &:hover
     background-color: darken($secondary, 10)

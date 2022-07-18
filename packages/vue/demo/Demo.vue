@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import IrToolbar from '../src/components/IrToolbar.vue';
-import IrToolbarItem from '../src/components/IrToolbarItem.vue';
-import IrToolbarBrand from "../src/components/IrToolbarBrand.vue";
+import IrToolbar from '../src/components/toolbar/IrToolbar.vue';
+import IrToolbarItem from '../src/components/toolbar/IrToolbarItem.vue';
+import IrToolbarBrand from "../src/components/toolbar/IrToolbarBrand.vue";
 </script>
 
 <template>
