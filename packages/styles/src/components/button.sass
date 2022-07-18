@@ -1,25 +1,20 @@
 @import '../partials/colors'
+@import '../partials/normalizers'
 
 .button
-  appearance: none
+  @include normalizeButton
+
   display: inline-flex
   padding: .5rem 1rem
   margin: 0
   align-self: start
-
-  border: none
   border-radius: .5rem
-
   background-color: $secondary
   color: inherit
-
   font-family: inherit
   font-size: 1rem
-  text-decoration: none
   line-height: 1
   text-align: center
-
-  cursor: pointer
   transition: background-color 250ms ease
 
   &.block
@@ -30,9 +25,6 @@
 
   &:hover
     background-color: darken($secondary, 10)
-
-  &:focus
-    outline: none
 
   &.primary
     background-color: $primary

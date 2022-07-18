@@ -1,0 +1,44 @@
+@import '../partials/sizes'
+@import '../partials/colors'
+@import '../partials/normalizers'
+
+.sidebar
+  width: $sidebarWidth
+  border-right: 1px solid $border
+  padding: 0.5rem
+
+  &.offCanvas
+    height: 100%
+    width: 0
+    padding: 0
+    overflow-x: hidden
+    transition: 0.5s width
+    position: relative
+
+    &.floating
+      position: fixed
+      z-index: 1
+      top: 0
+      left: 0
+
+    &.open
+      width: $sidebarWidth
+
+    .closeButton
+      @include normalizeButton
+
+      font-size: 2rem
+      position: absolute
+      top: 1rem
+      right: 1rem
+      background: transparent
+      padding: 0
+      height: 2rem
+      line-height: 1
+      aspect-ratio: 1 / 1
+      display: block
+      border-radius: 0.5rem
+      transition: 150ms background-color
+
+      &:hover
+        background: rgba(0, 0, 0, .1)
