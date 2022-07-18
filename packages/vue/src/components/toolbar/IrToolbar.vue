@@ -10,7 +10,7 @@ export interface ToolbarProps {
 const props = withDefaults(defineProps<ToolbarProps>(), {
   tag: 'div',
   sidebarLeft: false,
-})
+});
 
 const dynamicClasses = computed(() => ({
   sidebarLeft: props.sidebarLeft,
